@@ -2,7 +2,7 @@
 
 docker run -it ^
     -v %USERPROFILE%/.aws:/home/glue_user/.aws ^
-    -v ./workspace/:/home/glue_user/workspace/ ^
+    -v ./workspace:/home/glue_user/workspace ^
     -e AWS_PROFILE=aws_sdk_cpp ^
     -e DISABLE_SSL=true ^
     --rm -p 4040:4040 ^
