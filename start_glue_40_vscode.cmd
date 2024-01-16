@@ -2,9 +2,11 @@
 
 docker run -it ^
     -v %USERPROFILE%/.aws:/home/glue_user/.aws ^
-    -v ./workspace:/home/glue_user/workspace ^
+    -v C:\aws-glue-data\workspace:/home/glue_user/workspace ^
     -e AWS_PROFILE=aws_sdk_cpp ^
     -e DISABLE_SSL=true ^
     --rm -p 4040:4040 ^
     -p 18080:18080 ^
-    --name aws_sdk-glue amazon/aws-glue-libs:glue_libs_4.0.0_image_01 pyspark
+    --name aws_sdk-glue amazon/aws-glue-libs:glue_libs_4.0.0_image_01 
+
+@rem pyspark
