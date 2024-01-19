@@ -7,6 +7,4 @@ docker run -it ^
     -e DISABLE_SSL=true ^
     --rm -p 4040:4040 ^
     -p 18080:18080 ^
-    --name aws_sdk-glue amazon/aws-glue-libs:glue_libs_4.0.0_image_01 
-
-@rem pyspark
+    --name aws_sdk-glue amazon/aws-glue-libs:glue_libs_4.0.0_image_01 pyspark
